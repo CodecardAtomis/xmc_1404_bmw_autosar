@@ -1,0 +1,596 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.3.13950/W32 for ARM                28/Jan/2020  15:38:43
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Exe\xmc1404_test.out
+#    Map file     =  
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\List\xmc1404_test.map
+#    Command line =  
+#        -f C:\Users\raimis\AppData\Local\Temp\EW3217.tmp
+#        (C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\atostar_crc.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\bignum.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\can.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\gpio.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_arch.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_event.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_mem.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_mutex.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_queue.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_sem.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_tasks.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\kern_utils.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\main.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\scu.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\startup_XMC1400.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\string.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\system_XMC1400.o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj\uart.o
+#        -o
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Exe\xmc1404_test.out
+#        --map
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\List\xmc1404_test.map
+#        --config
+#        C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\config\XMC1404xxxxx200.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x10001000 { ro section .intvec };
+"P1":  place in [from 0x10001000 to 0x10032fff] { ro };
+define block HEAP with size = 4K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20003fff] { rw, block HEAP };
+"A1":  place at 0x2000000c { section .vect_table };
+define block CSTACK with size = 2K, alignment = 8 { };
+"A2":  place at end of [0x20000000-0x20003fff] { block CSTACK };
+initialize by copy { section .vect_table };
+
+  Section                Kind        Address    Size  Object
+  -------                ----        -------    ----  ------
+"A0":                                           0x18
+  .intvec                ro code  0x10001000    0x18  startup_XMC1400.o [1]
+                                - 0x10001018    0x18
+
+"P1":                                         0x3b17
+  .text                  ro code  0x10001018   0xba0  can.o [1]
+  .text                  ro code  0x10001bb8    0xe0  I32DivModFast.o [4]
+  .text                  ro code  0x10001c98   0x4bc  kern.o [1]
+  .text                  ro code  0x10002154     0x2  IntDivZer.o [4]
+  .text                  ro code  0x10002156     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10002158    0x4c  kern_sem.o [1]
+  .text                  ro code  0x100021a4    0x78  kern_queue.o [1]
+  .text                  ro code  0x1000221c   0x560  kern_tasks.o [1]
+  .text                  ro code  0x1000277c    0xec  kern_arch.o [1]
+  .text                  ro code  0x10002868   0x318  kern_mutex.o [1]
+  .text                  ro code  0x10002b80   0x936  bignum.o [1]
+  .text                  ro code  0x100034b6     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x100034b8    0x32  I64Mul.o [4]
+  .text                  ro code  0x100034ea    0x6a  I64DivMod.o [4]
+  .text                  ro code  0x10003554     0x2  I64DivZer.o [4]
+  .text                  ro code  0x10003556     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10003558   0x8e0  gpio.o [1]
+  .text                  ro code  0x10003e38   0x3e0  uart.o [1]
+  .text                  ro code  0x10004218   0x3d8  main.o [1]
+  .text                  ro code  0x100045f0    0x12  string.o [1]
+  .text                  ro code  0x10004602     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004604    0x8c  scu.o [1]
+  .text                  ro code  0x10004690    0x3c  atostar_crc.o [1]
+  .rodata                const    0x100046cc   0x100  atostar_crc.o [1]
+  .text                  ro code  0x100047cc    0xac  system_XMC1400.o [1]
+  .text                  ro code  0x10004878     0x8  system_XMC1400.o [1]
+  .text                  ro code  0x10004880    0x82  lz77_init_single.o [4]
+  .text                  ro code  0x10004902    0x40  zero_init3.o [4]
+  .text                  ro code  0x10004942     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004944    0x3c  system_XMC1400.o [1]
+  .text                  ro code  0x10004980    0x28  data_init.o [4]
+  .iar.init_table        const    0x100049a8    0x20  - Linker created -
+  .text                  ro code  0x100049c8    0x1a  cmain.o [4]
+  .text                  ro code  0x100049e2     0x4  low_level_init.o [3]
+  .text                  ro code  0x100049e6     0x8  exit.o [3]
+  .text                  ro code  0x100049ee     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x100049f0     0xa  cexit.o [4]
+  .text                  ro code  0x100049fa     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x100049fc    0x14  exit.o [5]
+  .text                  ro code  0x10004a10    0x14  system_XMC1400.o [1]
+  .rodata                const    0x10004a24    0x10  main.o [1]
+  .text                  ro code  0x10004a34    0x10  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a44     0xc  system_XMC1400.o [1]
+  .text                  ro code  0x10004a50     0xc  cstartup_M.o [4]
+  .text                  ro code  0x10004a5c     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a5e     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a60     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a62     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a64     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a66     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a68     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a6a     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a6c     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a6e     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a70     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a72     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a74     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a76     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a78     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a7a     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a7c     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a7e     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a80     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a82     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a84     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a86     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a88     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a8a     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a8c     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a8e     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a90     0x2  startup_XMC1400.o [1]
+  .text                  ro code  0x10004a92     0x2  startup_XMC1400.o [1]
+  .rodata                const    0x10004a94     0x0  zero_init3.o [4]
+  .rodata                const    0x10004a94     0x0  lz77_init_single.o [4]
+  Initializer bytes      const    0x10004a94    0x9b  <for section .vect_table-1>
+                                - 0x10004b2f  0x3b17
+
+"A1":                                          0x148
+  section .vect_table-1           0x2000000c   0x148  <Init block>
+    .vect_table          inited   0x2000000c   0x148  startup_XMC1400.o [1]
+                                - 0x20000154   0x148
+
+"P2", part 1 of 2:                             0x9f0
+  .bss                   zero     0x20000154   0x240  kern.o [1]
+  .bss                   zero     0x20000394   0x140  main.o [1]
+  .bss                   zero     0x200004d4   0x140  main.o [1]
+  .bss                   zero     0x20000614   0x100  main.o [1]
+  .bss                   zero     0x20000714    0x80  main.o [1]
+  .bss                   zero     0x20000794    0x80  main.o [1]
+  .bss                   zero     0x20000814    0x80  main.o [1]
+  .bss                   zero     0x20000894    0x38  can.o [1]
+  .bss                   zero     0x200008cc    0x38  can.o [1]
+  .bss                   zero     0x20000904    0x38  gpio.o [1]
+  .bss                   zero     0x2000093c    0x38  gpio.o [1]
+  .bss                   zero     0x20000974    0x38  gpio.o [1]
+  .bss                   zero     0x200009ac    0x38  gpio.o [1]
+  .bss                   zero     0x200009e4    0x38  gpio.o [1]
+  .bss                   zero     0x20000a1c    0x30  uart.o [1]
+  .bss                   zero     0x20000a4c    0x14  kern.o [1]
+  .bss                   zero     0x20000a60    0x14  main.o [1]
+  .bss                   zero     0x20000a74    0x14  main.o [1]
+  .bss                   zero     0x20000a88     0xc  main.o [1]
+  .bss                   zero     0x20000a94     0xc  main.o [1]
+  .bss                   zero     0x20000aa0     0xc  scu.o [1]
+  .bss                   zero     0x20000aac     0x8  kern.o [1]
+  .bss                   zero     0x20000ab4     0x8  kern.o [1]
+  .bss                   zero     0x20000abc     0x8  kern.o [1]
+  .bss                   zero     0x20000ac4     0x8  kern.o [1]
+  .bss                   zero     0x20000acc     0x8  kern.o [1]
+  .bss                   zero     0x20000ad4     0x4  can.o [1]
+  .bss                   zero     0x20000ad8     0x4  can.o [1]
+  .bss                   zero     0x20000adc     0x4  gpio.o [1]
+  .bss                   zero     0x20000ae0     0x4  gpio.o [1]
+  .bss                   zero     0x20000ae4     0x4  gpio.o [1]
+  .bss                   zero     0x20000ae8     0x4  gpio.o [1]
+  .bss                   zero     0x20000aec     0x4  gpio.o [1]
+  .bss                   zero     0x20000af0     0x4  kern.o [1]
+  .bss                   zero     0x20000af4     0x4  kern.o [1]
+  .bss                   zero     0x20000af8     0x4  kern.o [1]
+  .bss                   zero     0x20000afc     0x4  kern.o [1]
+  .bss                   zero     0x20000b00     0x4  kern.o [1]
+  .bss                   zero     0x20000b04     0x4  kern.o [1]
+  .bss                   zero     0x20000b08     0x4  kern.o [1]
+  .bss                   zero     0x20000b0c     0x4  kern.o [1]
+  .bss                   zero     0x20000b10     0x4  kern.o [1]
+  .bss                   zero     0x20000b14     0x4  kern.o [1]
+  .bss                   zero     0x20000b18     0x4  kern.o [1]
+  .bss                   zero     0x20000b1c     0x4  kern.o [1]
+  .bss                   zero     0x20000b20     0x4  kern.o [1]
+  .bss                   zero     0x20000b24     0x4  kern.o [1]
+  .bss                   zero     0x20000b28     0x4  kern.o [1]
+  .bss                   zero     0x20000b2c     0x4  kern.o [1]
+  .bss                   zero     0x20000b30     0x4  main.o [1]
+  .bss                   zero     0x20000b34     0x4  scu.o [1]
+  .bss                   zero     0x20000b38     0x4  system_XMC1400.o [1]
+  .bss                   zero     0x20000b3c     0x4  system_XMC1400.o [1]
+  .bss                   zero     0x20000b40     0x4  uart.o [1]
+                                - 0x20000b44   0x9f0
+
+"P2", part 2 of 2:                               0x4
+  .noinit                uninit   0x20000b44     0x4  system_XMC1400.o [1]
+                                - 0x20000b48     0x4
+
+"A2":                                          0x800
+  CSTACK                          0x20003800   0x800  <Block>
+    CSTACK               uninit   0x20003800   0x800  <Block tail>
+                                - 0x20004000   0x800
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x9f0:
+          0x20000154  0x9f0
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x9b (47% of destination):
+          0x10004a94   0x9b
+    1 destination range, total size 0x148:
+          0x2000000c  0x148
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  rw code  ro data  rw data
+    ------              -------  -------  -------  -------
+C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj: [1]
+    atostar_crc.o            60               256
+    bignum.o              2 358
+    can.o                 2 976                        120
+    gpio.o                2 272                        300
+    kern.o                1 212                        700
+    kern_arch.o             236
+    kern_mutex.o            792
+    kern_queue.o            120
+    kern_sem.o               76
+    kern_tasks.o          1 376
+    main.o                  984                16    1 348
+    scu.o                   140                         16
+    startup_XMC1400.o       110      328      155
+    string.o                 18
+    system_XMC1400.o        272                         12
+    uart.o                  992                         52
+    ------------------------------------------------------
+    Total:               13 994      328      427    2 548
+
+command line: [2]
+    ------------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                    8
+    low_level_init.o          4
+    ------------------------------------------------------
+    Total:                   12
+
+rt6M_tl.a: [4]
+    I32DivModFast.o         224
+    I64DivMod.o             106
+    I64DivZer.o               2
+    I64Mul.o                 50
+    IntDivZer.o               2
+    cexit.o                  10
+    cmain.o                  26
+    cstartup_M.o             12
+    data_init.o              40
+    lz77_init_single.o      130
+    zero_init3.o             64
+    ------------------------------------------------------
+    Total:                  666
+
+shb_l.a: [5]
+    exit.o                   20
+    ------------------------------------------------------
+    Total:                   20
+
+    Linker created                             32    2 048
+----------------------------------------------------------
+    Grand Total:         14 692      328      459    4 596
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x100049a8          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x100049c8          --   Gb  - Linker created -
+?main                   0x100049c9         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x20003800          --   Gb  - Linker created -
+CSTACK$$Limit           0x20004000          --   Gb  - Linker created -
+Crc_CalculateCRC8       0x10004691   0x34  Code  Gb  atostar_crc.o [1]
+NVIC_SetPriority        0x10004219   0x84  Code  Lc  main.o [1]
+PendSV_Handler          0x100027bf         Code  Gb  kern_arch.o [1]
+QhatTooBig              0x1000319d   0x38  Code  Gb  bignum.o [1]
+Region$$Table$$Base     0x100049a8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x100049c8          --   Gb  - Linker created -
+SysTick_Config          0x1000429d   0x32  Code  Lc  main.o [1]
+SysTick_HandlerFunc     0x10001d89    0xc  Code  Gb  kern.o [1]
+SystemCoreClock         0x20000b44    0x4  Data  Gb  system_XMC1400.o [1]
+SystemCoreClockUpdate::FDIV
+                        0x20000b3c    0x4  Data  Lc  system_XMC1400.o [1]
+SystemCoreClockUpdate::IDIV
+                        0x20000b38    0x4  Data  Lc  system_XMC1400.o [1]
+SystemInit              0x10004a45    0xc  Code  Wk  system_XMC1400.o [1]
+__aeabi_idiv            0x10001be5         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x10002155         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x10001be5         Code  Gb  I32DivModFast.o [4]
+__aeabi_ldiv0           0x10003555         Code  Gb  I64DivZer.o [4]
+__aeabi_lmul            0x100034b9         Code  Gb  I64Mul.o [4]
+__aeabi_uidiv           0x10001beb         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x10001beb         Code  Gb  I32DivModFast.o [4]
+__aeabi_uldivmod        0x100034eb         Code  Gb  I64DivMod.o [4]
+__cmain                 0x100049c9         Code  Gb  cmain.o [4]
+__exit                  0x100049fd   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x10004981   0x28  Code  Gb  data_init.o [4]
+__iar_lz77_init_single3
+                        0x10004881   0x82  Code  Gb  lz77_init_single.o [4]
+__iar_program_start     0x10004a51         Code  Gb  cstartup_M.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_zero_init3        0x10004903   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x100049e3    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x10001000         Data  Gb  startup_XMC1400.o [1]
+_call_main              0x100049d5         Code  Gb  cmain.o [4]
+_exit                   0x100049f1         Code  Gb  cexit.o [4]
+_main                   0x100049df         Code  Gb  cmain.o [4]
+can0_configure_ext_mbox
+                        0x10001373    0x2  Code  Gb  can.o [1]
+can0_configure_mbox     0x100012e5   0x8e  Code  Gb  can.o [1]
+can0_disable            0x1000105b   0x10  Code  Gb  can.o [1]
+can0_disable_configuration_change
+                        0x10001081   0x16  Code  Gb  can.o [1]
+can0_disable_mbox       0x100012e1    0x2  Code  Gb  can.o [1]
+can0_enable             0x10001021   0x3a  Code  Gb  can.o [1]
+can0_enable_configuration_change
+                        0x1000106b   0x16  Code  Gb  can.o [1]
+can0_enable_mbox        0x100012e3    0x2  Code  Gb  can.o [1]
+can0_init               0x1000146b   0x9c  Code  Gb  can.o [1]
+can0_list_sem           0x20000a60   0x14  Data  Gb  main.o [1]
+can0_mbox_rx_complete   0x10001375   0x22  Code  Gb  can.o [1]
+can0_msg_list           0x20000a88    0xc  Data  Gb  main.o [1]
+can0_open               0x10001519   0x78  Code  Gb  can.o [1]
+can0_recv               0x100013a5   0x50  Code  Gb  can.o [1]
+can0_reset_init_bit     0x100010ad   0x16  Code  Gb  can.o [1]
+can0_send               0x100013f5   0x76  Code  Gb  can.o [1]
+can0_set_init_bit       0x10001097   0x16  Code  Gb  can.o [1]
+can0_set_speed          0x100010c3  0x150  Code  Gb  can.o [1]
+can0_setup_clock        0x10001213   0xc6  Code  Gb  can.o [1]
+can1_configure_ext_mbox
+                        0x1000192b    0x2  Code  Gb  can.o [1]
+can1_configure_mbox     0x1000189d   0x8e  Code  Gb  can.o [1]
+can1_disable            0x100015cf   0x10  Code  Gb  can.o [1]
+can1_disable_configuration_change
+                        0x100015ff   0x16  Code  Gb  can.o [1]
+can1_disable_mbox       0x10001899    0x2  Code  Gb  can.o [1]
+can1_enable             0x10001595   0x3a  Code  Gb  can.o [1]
+can1_enable_configuration_change
+                        0x100015e9   0x16  Code  Gb  can.o [1]
+can1_enable_mbox        0x1000189b    0x2  Code  Gb  can.o [1]
+can1_init               0x10001a23   0xb0  Code  Gb  can.o [1]
+can1_list_sem           0x20000a74   0x14  Data  Gb  main.o [1]
+can1_mbox_rx_complete   0x1000192d   0x22  Code  Gb  can.o [1]
+can1_msg_list           0x20000a94    0xc  Data  Gb  main.o [1]
+can1_open               0x10001ae9   0x78  Code  Gb  can.o [1]
+can1_recv               0x1000195d   0x50  Code  Gb  can.o [1]
+can1_reset_init_bit     0x1000162b   0x16  Code  Gb  can.o [1]
+can1_send               0x100019ad   0x76  Code  Gb  can.o [1]
+can1_set_init_bit       0x10001615   0x16  Code  Gb  can.o [1]
+can1_set_speed          0x10001659  0x150  Code  Gb  can.o [1]
+can1_setup_clock        0x100017e1   0xac  Code  Gb  can.o [1]
+can_queue_reset         0x10001019    0x8  Code  Gb  can.o [1]
+change_running_task_priority
+                        0x1000260d   0x82  Code  Gb  kern_tasks.o [1]
+crc8_tab                0x100046cc  0x100  Data  Lc  atostar_crc.o [1]
+debug_ready             0x20000af0    0x4  Data  Gb  kern.o [1]
+do_unlock_mutex         0x10002869  0x1c6  Code  Gb  kern_mutex.o [1]
+dynamic_memory_bitmap   0x20000154  0x240  Data  Gb  kern.o [1]
+enable_lock_mutex       0x10002a75   0x80  Code  Gb  kern_mutex.o [1]
+exit                    0x100049e7    0x8  Code  Gb  exit.o [3]
+find_max_blocked_priority
+                        0x10002a35   0x40  Code  Gb  kern_mutex.o [1]
+find_next_task_to_run   0x10002459   0x3c  Code  Gb  kern_tasks.o [1]
+get_mutex_by_lock_mutex_queque
+                        0x100020e1   0x12  Code  Gb  kern.o [1]
+get_mutex_by_mutex_queque
+                        0x100020cf   0x12  Code  Gb  kern.o [1]
+get_mutex_by_wait_queque
+                        0x100020f3   0x10  Code  Gb  kern.o [1]
+get_task_by_block_queque
+                        0x100020bb   0x14  Code  Gb  kern.o [1]
+get_task_by_timer_queque
+                        0x10002095   0x14  Code  Gb  kern.o [1]
+get_task_by_tsk_queue   0x100020a9   0x12  Code  Gb  kern.o [1]
+gpio_0_get_pin          0x100035c3   0x1c  Code  Gb  gpio.o [1]
+gpio_0_open             0x100036c5   0x30  Code  Gb  gpio.o [1]
+gpio_0_set_input        0x10003559   0x6a  Code  Gb  gpio.o [1]
+gpio_0_set_output       0x100035df   0xc0  Code  Gb  gpio.o [1]
+gpio_0_set_pin          0x1000369f   0x26  Code  Gb  gpio.o [1]
+gpio_1_get_pin          0x1000375f   0x1c  Code  Gb  gpio.o [1]
+gpio_1_open             0x10003849   0x30  Code  Gb  gpio.o [1]
+gpio_1_set_input        0x100036f5   0x6a  Code  Gb  gpio.o [1]
+gpio_1_set_output       0x1000377b   0xa8  Code  Gb  gpio.o [1]
+gpio_1_set_pin          0x10003823   0x26  Code  Gb  gpio.o [1]
+gpio_2_get_pin          0x100038fd   0x1c  Code  Gb  gpio.o [1]
+gpio_2_open             0x10003a61   0x30  Code  Gb  gpio.o [1]
+gpio_2_set_input        0x1000387d   0x80  Code  Gb  gpio.o [1]
+gpio_2_set_output       0x10003921   0xd6  Code  Gb  gpio.o [1]
+gpio_2_set_pin          0x10003a09   0x52  Code  Gb  gpio.o [1]
+gpio_3_get_pin          0x10003afb   0x1c  Code  Gb  gpio.o [1]
+gpio_3_open             0x10003c1b   0x30  Code  Gb  gpio.o [1]
+gpio_3_set_input        0x10003a91   0x6a  Code  Gb  gpio.o [1]
+gpio_3_set_output       0x10003b31   0xc0  Code  Gb  gpio.o [1]
+gpio_3_set_pin          0x10003bf5   0x26  Code  Gb  gpio.o [1]
+gpio_4_get_pin          0x10003cb5   0x1c  Code  Gb  gpio.o [1]
+gpio_4_open             0x10003dd5   0x30  Code  Gb  gpio.o [1]
+gpio_4_set_input        0x10003c4b   0x6a  Code  Gb  gpio.o [1]
+gpio_4_set_output       0x10003cd9   0xc0  Code  Gb  gpio.o [1]
+gpio_4_set_pin          0x10003da9   0x26  Code  Gb  gpio.o [1]
+icbrt1                  0x10003489   0x2e  Code  Gb  bignum.o [1]
+is_queue_empty          0x100021ad   0x18  Code  Gb  kern_queue.o [1]
+kern_arm_disable_interrupts
+                        0x1000283f         Code  Gb  kern_arch.o [1]
+kern_arm_enable_interrupts
+                        0x10002843         Code  Gb  kern_arch.o [1]
+kern_blocked_tasks_list
+                        0x20000acc    0x8  Data  Gb  kern.o [1]
+kern_chk_irq_disabled   0x10002839         Code  Gb  kern_arch.o [1]
+kern_context_switch_request
+                        0x20000b0c    0x4  Data  Gb  kern.o [1]
+kern_cpu_restore_sr     0x10002833         Code  Gb  kern_arch.o [1]
+kern_cpu_save_sr        0x1000282b         Code  Gb  kern_arch.o [1]
+kern_create_queue       0x20000ab4    0x8  Data  Gb  kern.o [1]
+kern_created_tasks_qty  0x20000b1c    0x4  Data  Gb  kern.o [1]
+kern_curr_run_task      0x20000b28    0x4  Data  Gb  kern.o [1]
+kern_enable_switch_context
+                        0x20000b08    0x4  Data  Gb  kern.o [1]
+kern_get_tickcount      0x10001d95    0x6  Code  Gb  kern.o [1]
+kern_idle_count         0x20000b18    0x4  Data  Gb  kern.o [1]
+kern_inside_int         0x10002103   0x16  Code  Gb  kern.o [1]
+kern_int_counter        0x20000b04    0x4  Data  Gb  kern.o [1]
+kern_int_exit           0x10002823         Code  Gb  kern_arch.o [1]
+kern_iswitch_context    0x100027bf         Code  Gb  kern_arch.o [1]
+kern_locked_mutexes_list
+                        0x20000ac4    0x8  Data  Gb  kern.o [1]
+kern_next_task_to_run   0x20000b24    0x4  Data  Gb  kern.o [1]
+kern_ready_list         0x20000aac    0x8  Data  Gb  kern.o [1]
+kern_ready_to_run_bmp   0x20000b20    0x4  Data  Gb  kern.o [1]
+kern_sem_create         0x10002159   0x48  Code  Gb  kern_sem.o [1]
+kern_stack_init         0x10001ef5   0x6e  Code  Gb  kern.o [1]
+kern_start_exe          0x1000277d         Code  Gb  kern_arch.o [1]
+kern_start_system       0x10001c99   0xf0  Code  Gb  kern.o [1]
+kern_switch_context     0x10002815         Code  Gb  kern_arch.o [1]
+kern_switch_context_exit
+                        0x100027b5         Code  Gb  kern_arch.o [1]
+kern_switch_lock        0x20000b14    0x4  Data  Gb  kern.o [1]
+kern_system_state       0x20000b10    0x4  Data  Gb  kern.o [1]
+kern_task_create        0x1000221d  0x11e  Code  Gb  kern_tasks.o [1]
+kern_task_exit          0x100023c5   0x8c  Code  Gb  kern_tasks.o [1]
+kern_task_get_id        0x1000233b   0x10  Code  Gb  kern_tasks.o [1]
+kern_task_sleep         0x1000234b   0x60  Code  Gb  kern_tasks.o [1]
+kern_tick_int_processing
+                        0x10001dbd   0xf8  Code  Gb  kern.o [1]
+kern_wait_timeout_list  0x20000abc    0x8  Data  Gb  kern.o [1]
+main                    0x100042cf   0x62  Code  Gb  main.o [1]
+main_task               0x20000714   0x80  Data  Gb  main.o [1]
+main_task_func          0x10004331  0x14a  Code  Gb  main.o [1]
+main_task_stack         0x20000614  0x100  Data  Gb  main.o [1]
+malloc_semaphore        0x20000a4c   0x14  Data  Gb  kern.o [1]
+memory                  0x20000b2c    0x4  Data  Gb  kern.o [1]
+memset                  0x100045f1   0x12  Code  Gb  string.o [1]
+mpAdd                   0x10002b81   0x5a  Code  Gb  bignum.o [1]
+mpCompare               0x1000326f   0x42  Code  Gb  bignum.o [1]
+mpCubeRoot              0x100033d7   0xa8  Code  Gb  bignum.o [1]
+mpDivide                0x10002f21  0x27c  Code  Gb  bignum.o [1]
+mpModulo                0x10003347   0x48  Code  Gb  bignum.o [1]
+mpMultSub               0x100031d5   0x82  Code  Gb  bignum.o [1]
+mpMultiply              0x10002c61   0xc6  Code  Gb  bignum.o [1]
+mpSetDigit              0x10003257   0x18  Code  Gb  bignum.o [1]
+mpSetEqual              0x100032b1   0x1a  Code  Gb  bignum.o [1]
+mpSetZero               0x10002ea3   0x20  Code  Gb  bignum.o [1]
+mpShiftLeft             0x10002d27   0xbc  Code  Gb  bignum.o [1]
+mpShiftRight            0x10002de3   0xc0  Code  Gb  bignum.o [1]
+mpShortCmp              0x1000338f   0x48  Code  Gb  bignum.o [1]
+mpShortDiv              0x100032cb   0x7c  Code  Gb  bignum.o [1]
+mpSizeof                0x10002ec3   0x20  Code  Gb  bignum.o [1]
+mpSubb                  0x10002bdb   0x66  Code  Gb  bignum.o [1]
+odo_task                0x20000814   0x80  Data  Gb  main.o [1]
+odo_task_func           0x10004571   0x20  Code  Gb  main.o [1]
+odo_task_stack          0x200004d4  0x140  Data  Gb  main.o [1]
+pcan0                   0x20000ad4    0x4  Data  Gb  can.o [1]
+pcan0_buffer            0x20000894   0x38  Data  Gb  can.o [1]
+pcan1                   0x20000ad8    0x4  Data  Gb  can.o [1]
+pcan1_buffer            0x200008cc   0x38  Data  Gb  can.o [1]
+pgpio_0                 0x20000adc    0x4  Data  Gb  gpio.o [1]
+pgpio_0_buffer          0x20000904   0x38  Data  Gb  gpio.o [1]
+pgpio_1                 0x20000ae0    0x4  Data  Gb  gpio.o [1]
+pgpio_1_buffer          0x2000093c   0x38  Data  Gb  gpio.o [1]
+pgpio_2                 0x20000ae4    0x4  Data  Gb  gpio.o [1]
+pgpio_2_buffer          0x20000974   0x38  Data  Gb  gpio.o [1]
+pgpio_3                 0x20000ae8    0x4  Data  Gb  gpio.o [1]
+pgpio_3_buffer          0x200009ac   0x38  Data  Gb  gpio.o [1]
+pgpio_4                 0x20000aec    0x4  Data  Gb  gpio.o [1]
+pgpio_4_buffer          0x200009e4   0x38  Data  Gb  gpio.o [1]
+pscu                    0x20000b34    0x4  Data  Gb  scu.o [1]
+pscu_buffer             0x20000aa0    0xc  Data  Gb  scu.o [1]
+pus0                    0x20000b40    0x4  Data  Gb  uart.o [1]
+pus0_buffer             0x20000a1c   0x30  Data  Gb  uart.o [1]
+queue_add_tail          0x100021c5    0xe  Code  Gb  kern_queue.o [1]
+queue_contains_entry    0x100021ff   0x1e  Code  Gb  kern_queue.o [1]
+queue_remove_entry      0x100021f1    0xe  Code  Gb  kern_queue.o [1]
+queue_remove_head       0x100021d3   0x1e  Code  Gb  kern_queue.o [1]
+queue_reset             0x100021a5    0x8  Code  Gb  kern_queue.o [1]
+randseed                0x20000b00    0x4  Data  Gb  kern.o [1]
+remove_task_from_blocked_list
+                        0x10002b53   0x26  Code  Gb  kern_mutex.o [1]
+scan_event_state        0x10001f75   0x9a  Code  Gb  kern.o [1]
+scan_sem_state          0x1000200f   0x86  Code  Gb  kern.o [1]
+scu_LockProtectedBits   0x10004617    0x8  Code  Gb  scu.o [1]
+scu_UnlockProtectedBits
+                        0x10004605   0x12  Code  Gb  scu.o [1]
+scu_disable_peripheral_clock
+                        0x1000463f   0x18  Code  Gb  scu.o [1]
+scu_enable_peripheral_clock
+                        0x1000461f   0x20  Code  Gb  scu.o [1]
+scu_open                0x10004657   0x18  Code  Gb  scu.o [1]
+set_current_priority    0x100026a9   0x76  Code  Gb  kern_tasks.o [1]
+spDivide                0x10002ee3   0x3e  Code  Gb  bignum.o [1]
+spMultiply              0x10002c41   0x20  Code  Gb  bignum.o [1]
+speed_frame_counter     0x10004a24   0x10  Data  Gb  main.o [1]
+speed_task              0x20000794   0x80  Data  Gb  main.o [1]
+speed_task_func         0x10004481   0xe6  Code  Gb  main.o [1]
+speed_task_stack        0x20000394  0x140  Data  Gb  main.o [1]
+startLEDout             0x20000b30    0x4  Data  Gb  main.o [1]
+system_tick_count       0x20000afc    0x4  Data  Gb  kern.o [1]
+task_curr_to_wait_action
+                        0x100025a9   0x5e  Code  Gb  kern_tasks.o [1]
+task_id_counter         0x20000af8    0x4  Data  Gb  kern.o [1]
+task_set_init_state     0x1000271f   0x5e  Code  Gb  kern_tasks.o [1]
+task_to_non_runnable    0x10002495   0x12  Code  Gb  kern_tasks.o [1]
+task_to_runnable        0x100024a7   0x1c  Code  Gb  kern_tasks.o [1]
+task_wait_complete      0x100024c9   0xdc  Code  Gb  kern_tasks.o [1]
+try_lock_mutex          0x10002af5   0x5e  Code  Gb  kern_mutex.o [1]
+us0_enable              0x10003fb9   0x2e  Code  Gb  uart.o [1]
+us0_get_transmit_status
+                        0x10003eff    0xa  Code  Gb  uart.o [1]
+us0_init                0x10004109   0x58  Code  Gb  uart.o [1]
+us0_open                0x10004185   0x58  Code  Gb  uart.o [1]
+us0_recv_byte           0x10003f55   0x64  Code  Gb  uart.o [1]
+us0_rx_enable           0x10003fe7   0x22  Code  Gb  uart.o [1]
+us0_send_byte           0x10003f09   0x4c  Code  Gb  uart.o [1]
+us0_set_baud_rate       0x10003e39   0xc6  Code  Gb  uart.o [1]
+us0_set_mode            0x10004035   0xca  Code  Gb  uart.o [1]
+us0_tx_enable           0x10004009   0x2c  Code  Gb  uart.o [1]
+us_count                0x20000af4    0x4  Data  Gb  kern.o [1]
+
+
+[1] = C:\programs\MCU\infineon\XMC1000\xmc_1404_bmw_autosar\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  14 692 bytes of readonly  code memory
+     328 bytes of readwrite code memory
+     459 bytes of readonly  data memory
+   4 596 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

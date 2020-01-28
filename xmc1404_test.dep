@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>2156216928</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\atostar_crc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\atostar_crc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mutex.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\bignum.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_tasks.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\scu.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_tasks.pbi</file>
+            <file>$PROJ_DIR$\kern\kern_task.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\xmc1404_test.bin</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_XMC1400.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_queue.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_sem.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mem.__cstat.et</file>
+            <file>$PROJ_DIR$\kern\kern_sem.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_event.o</file>
+            <file>$PROJ_DIR$\kern\kern_mutex.h</file>
+            <file>$PROJ_DIR$\bignum.h</file>
+            <file>$PROJ_DIR$\kern\kern_mem.c</file>
+            <file>$PROJ_DIR$\string.c</file>
+            <file>$PROJ_DIR$\uart.c</file>
+            <file>$PROJ_DIR$\kern\kern.c</file>
+            <file>$PROJ_DIR$\kern\kern_utils.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\kern\kern_mutex.c</file>
+            <file>$PROJ_DIR$\kern\kern_arch.s</file>
+            <file>$PROJ_DIR$\kern\kern_event.c</file>
+            <file>$PROJ_DIR$\kern\kern_queue.c</file>
+            <file>$PROJ_DIR$\kern\kern_sem.c</file>
+            <file>$PROJ_DIR$\bignum.c</file>
+            <file>$PROJ_DIR$\scu.c</file>
+            <file>$PROJ_DIR$\startup_XMC1400.s</file>
+            <file>$PROJ_DIR$\can.c</file>
+            <file>$PROJ_DIR$\gpio.c</file>
+            <file>$PROJ_DIR$\system_XMC1400.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_queue.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_event.__cstat.et</file>
+            <file>$PROJ_DIR$\system_XMC1400.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mutex.o</file>
+            <file>$PROJ_DIR$\kern\kern_queue.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\xmc1404_test.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\bignum.__cstat.et</file>
+            <file>$PROJ_DIR$\kern\kern_tasks.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_tasks.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\can.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_event.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\can.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\can.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mutex.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\uart.h</file>
+            <file>$PROJ_DIR$\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\scu.h</file>
+            <file>$PROJ_DIR$\gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\List\xmc1404_test.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_arch.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\string.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\string.pbi</file>
+            <file>$PROJ_DIR$\XMC1400.h</file>
+            <file>$PROJ_DIR$\config\XMC1404xxxxx200.icf</file>
+            <file>$PROJ_DIR$\kern\kern_types.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_sem.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_XMC1400.__cstat.et</file>
+            <file>$PROJ_DIR$\kern\kern_event.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_utils.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\xmc1404_test.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\bignum.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\kern\kern_utils.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_queue.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\string.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_utils.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_utils.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_XMC1400.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_XMC1400.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_sem.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\scu.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\can.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mem.o</file>
+            <file>$PROJ_DIR$\kern\kern_mem.h</file>
+            <file>$PROJ_DIR$\core_cm0.h</file>
+            <file>$PROJ_DIR$\kern\kern.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\scu.o</file>
+            <file>$PROJ_DIR$\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\kern_mem.pbi</file>
+            <file>$PROJ_DIR$\atostar_crc.c</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 47 62</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_mem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10 22 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99 10 45 22 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\string.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 57 103 69 10 72 45 18 78 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78 10 103 45 43 83 61 57 69 72 18 101 100 58 77 85 46 67 73 89 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 60 59 57 69 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69 100 59 83 61 60 57 101 43 58 77 85 46 67 73 89 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 90</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 103 69 22 10 45 18 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 89 69 18 43 73 103 22 45 72 100 46 92 67 58 77 83 85 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_utils.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 82</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 2</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 60 59 57 97 23 103 69 10 72 45 18 78 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 97 78 59 103 45 43 83 61 60 57 23 69 72 18 101 100 58 77 85 46 67 73 89 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_mutex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 45 22 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_arch.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_event.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 45 72 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_queue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 80</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 45 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_sem.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 45 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\bignum.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\scu.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73 89 92 100 43 46 61 67 58 77 83 85 59</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_XMC1400.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\can.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 60 59 97 69 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67 69 73 59 100 46 92 60 97 101 43 89 58 77 83 85 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43 60</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67 100 73 46 92 60 43 89 58 77 83 85 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_XMC1400.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 100 46 77 73 89 83 85 58 92 61 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43 73 89 92 100 46 61 67 58 77 83 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\xmc1404_test.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 68 0 6 53 12 84 63 21 98 44 41 16 50 82 87 102 88 81 13 96 15 79 5 95</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\kern\kern_tasks.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 45 10 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 45 22 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\atostar_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
